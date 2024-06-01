@@ -38,7 +38,7 @@ Medical Diagnosis using Computer Vision
 
 1. Run the Streamlit app:
 `python -m streamlit run App.py `
-2. Upload a medical image (CT scan, X-ray, MRI, etc.) through the web interface.
+2. Upload a medical image (CT scan) through the web interface.
 3. Select the desired cancer type from the sidebar.
 4. The application will preprocess the image and provide a prediction along with the probability score.
 5. If the prediction indicates the presence of cancer, the application will display relevant precautions and recommendations.
@@ -47,21 +47,15 @@ Medical Diagnosis using Computer Vision
 
 The deep learning models used in MeDiCT were trained on the following datasets:
 
-- **Lung Cancer Model**: Trained on the [Lung Cancer Dataset from Kaggle](https://www.kaggle.com/mohamedhanyyy/chest-ctscan-images)
-- **Kidney Cancer Model**: Trained on the [Kidney Cancer Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/kidney-cancer-dataset)
-- **Brain Tumor Model**: Trained on the [Brain Tumor Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/brain-tumor-dataset)
+- **Lung Cancer Model**: Trained on the [Lung Cancer Dataset from Kaggle](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
+- **Kidney Cancer Model**: Trained on the [Kidney Cancer Dataset from Kaggle](https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone)
+- **Brain Tumor Model**: Trained on the [Brain Tumor Dataset from Kaggle](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri)
 
 ### Lung Cancer Model
 
 The lung cancer model is based on the VGG16 architecture, a popular convolutional neural network model for image classification tasks. The VGG16 model was pre-trained on the ImageNet dataset and then fine-tuned on the lung cancer dataset.
 
 ## Models
-
-The deep learning models used in MeDiCT were trained on the following datasets:
-
-- **Lung Cancer Model**: Trained on the [Lung Cancer Dataset from Kaggle](https://www.kaggle.com/mohamedhanyyy/chest-ctscan-images)
-- **Kidney Cancer Model**: Trained on the [Kidney Cancer Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/kidney-cancer-dataset)
-- **Brain Tumor Model**: Trained on the [Brain Tumor Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/brain-tumor-dataset)
 
 ### VGG16 Architecture
 
@@ -70,6 +64,10 @@ The VGG16 (Visual Geometry Group 16) is a popular convolutional neural network a
 The VGG16 architecture consists of 16 convolutional layers, followed by three fully connected layers. The convolutional layers are arranged in a series of blocks, with each block consisting of several convolutional layers with small 3x3 filters, followed by a max-pooling layer for spatial downsampling. The depth of the network increases as it progresses, starting with 64 filters in the first block and doubling with each subsequent block.
 
 The VGG16 architecture is known for its simplicity and uniformity, as it uses the same filter size (3x3) and the same padding technique throughout the convolutional layers. This simplicity, combined with the depth of the network, allows the VGG16 to learn rich and hierarchical feature representations from input images.
+
+<p align="center">
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219152207/new41.jpg" alt="VGG16 Architecture" width="300">
+</p>
 
 ### Lung Cancer Model
 
