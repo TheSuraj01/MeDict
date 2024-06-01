@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="FavIcon.jpeg" alt="MeDiCT Favicon" width="100">
+  <img src="FavIcon.jpeg" alt="MeDiCT Favicon" width="200">
 </p>
 
 # MeDict
@@ -70,7 +70,7 @@ The VGG16 architecture consists of 16 convolutional layers, followed by three fu
 The VGG16 architecture is known for its simplicity and uniformity, as it uses the same filter size (3x3) and the same padding technique throughout the convolutional layers. This simplicity, combined with the depth of the network, allows the VGG16 to learn rich and hierarchical feature representations from input images.
 
 <p align="center">
-  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219152207/new41.jpg" alt="VGG16 Architecture" width="300">
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219152207/new41.jpg" alt="VGG16 Architecture" width="500">
 </p>
 
 ### Lung Cancer Model
