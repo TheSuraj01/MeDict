@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="FavIcon.jpeg" alt="MeDiCT Favicon" width="100">
+</p>
 # MeDict
 Medical Diagnosis using Computer Vision
 ## Table of Contents
