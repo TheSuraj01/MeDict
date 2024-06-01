@@ -55,6 +55,26 @@ The deep learning models used in MeDiCT were trained on the following datasets:
 
 The lung cancer model is based on the VGG16 architecture, a popular convolutional neural network model for image classification tasks. The VGG16 model was pre-trained on the ImageNet dataset and then fine-tuned on the lung cancer dataset.
 
+## Models
+
+The deep learning models used in MeDiCT were trained on the following datasets:
+
+- **Lung Cancer Model**: Trained on the [Lung Cancer Dataset from Kaggle](https://www.kaggle.com/mohamedhanyyy/chest-ctscan-images)
+- **Kidney Cancer Model**: Trained on the [Kidney Cancer Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/kidney-cancer-dataset)
+- **Brain Tumor Model**: Trained on the [Brain Tumor Dataset from Kaggle](https://www.kaggle.com/datasets/your-username/brain-tumor-dataset)
+
+### VGG16 Architecture
+
+The VGG16 (Visual Geometry Group 16) is a popular convolutional neural network architecture proposed by researchers at the University of Oxford. It was introduced in the paper "Very Deep Convolutional Networks for Large-Scale Image Recognition" and achieved excellent results on the ImageNet dataset.
+
+The VGG16 architecture consists of 16 convolutional layers, followed by three fully connected layers. The convolutional layers are arranged in a series of blocks, with each block consisting of several convolutional layers with small 3x3 filters, followed by a max-pooling layer for spatial downsampling. The depth of the network increases as it progresses, starting with 64 filters in the first block and doubling with each subsequent block.
+
+The VGG16 architecture is known for its simplicity and uniformity, as it uses the same filter size (3x3) and the same padding technique throughout the convolutional layers. This simplicity, combined with the depth of the network, allows the VGG16 to learn rich and hierarchical feature representations from input images.
+
+### Lung Cancer Model
+
+The lung cancer model in MeDiCT is based on the VGG16 architecture. The pre-trained VGG16 model weights, obtained from training on the ImageNet dataset, are used as the starting point. The top classification layers of the VGG16 model are then replaced with new layers tailored for the lung cancer classification task.
+
 The model architecture consists of the following layers:
 
 1. **VGG16 Base Model**: The pre-trained VGG16 model without the top classification layers.
@@ -64,11 +84,12 @@ The model architecture consists of the following layers:
 
 ### Kidney Cancer Model
 
-The kidney cancer model is a custom convolutional neural network architecture designed specifically for the kidney cancer dataset. The model consists of several convolutional layers, max-pooling layers, and dense layers.
+The kidney cancer model in MeDiCT also utilizes the VGG16 architecture as its backbone. Similar to the lung cancer model, the pre-trained VGG16 weights are used as the starting point, and the top classification layers are replaced with new layers specific to the kidney cancer classification task.
 
 ### Brain Tumor Model
 
-Similar to the kidney cancer model, the brain tumor model is a custom convolutional neural network architecture tailored for the brain tumor dataset. It includes convolutional layers, max-pooling layers, and dense layers.
+The brain tumor model follows a similar approach, leveraging the VGG16 architecture and its pre-trained weights as the foundation. The top classification layers are replaced with new layers tailored for the brain tumor classification task.
+
 
 ## Data
 
